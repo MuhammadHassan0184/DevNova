@@ -45,7 +45,7 @@ class SkillsSection extends StatelessWidget {
                 width: width > 1200 ? 450 : 300,
                 title: 'Core Skills',
                 skills: {
-                  'Flutter': 1,
+                  'Flutter': 0.99,
                   'Dart': 0.9,
                   'Flutter Web': 0.85,
                   'State Management': 0.85,

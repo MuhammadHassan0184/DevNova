@@ -1,4 +1,3 @@
-import 'package:devnova/main.dart';
 import 'package:devnova/widgets/keys/section_keys.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +18,7 @@ class Navbar extends StatelessWidget {
             children: [
               /// LOGO
               const Text(
-                '𝓓𝓮𝓿𝓝𝓸𝓿𝓪',
+                '𝔻𝕖𝕧ℕ𝕠𝕧𝕒',
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,

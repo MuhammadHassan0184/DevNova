@@ -1,3 +1,4 @@
+import 'package:devnova/Features/HoverFeature_Card.dart';
 import 'package:flutter/material.dart';
 
 class AboutMeSection extends StatelessWidget {
@@ -28,10 +29,7 @@ class AboutMeSection extends StatelessWidget {
           Text(
             "I'm a dedicated Flutter developer with a passion for creating beautiful and functional mobile applications",
             textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white70,
-              fontSize: 16,
-            ),
+            style: TextStyle(color: Colors.white70, fontSize: 16),
           ),
           SizedBox(height: 40),
           // Feature Cards
@@ -40,30 +38,56 @@ class AboutMeSection extends StatelessWidget {
             runSpacing: 20,
             alignment: WrapAlignment.center,
             children: [
-              _buildFeatureCard(
-                width: width > 1200 ? 386 : 250, // wider on large screens
+              //   _buildFeatureCard(
+              //     width: width > 1200 ? 386 : 250, // wider on large screens
+              //     icon: Icons.code,
+              //     title: "Clean Code",
+              //     description: "Writing maintainable and scalable code following best practices",
+              //   ),
+              //   _buildFeatureCard(
+              //     width: width > 1200 ? 386 : 250,
+              //     icon: Icons.phone_iphone,
+              //     title: "Cross-Platform",
+              //     description: "Building apps and websites that work seamlessly across all platforms",
+              //   ),
+              //   _buildFeatureCard(
+              //     width: width > 1200 ? 386 : 250,
+              //     icon: Icons.flash_on,
+              //     title: "Performance",
+              //     description: "Optimizing applications for speed and smooth user experience",
+              //   ),
+              // ],
+              HoverFeatureCard(
+                width: width > 1200 ? 386 : 250,
                 icon: Icons.code,
                 title: "Clean Code",
-                description: "Writing maintainable and scalable code following best practices",
+                description:
+                    "Writing maintainable and scalable code following best practices",
               ),
-              _buildFeatureCard(
+
+              HoverFeatureCard(
                 width: width > 1200 ? 386 : 250,
                 icon: Icons.phone_iphone,
                 title: "Cross-Platform",
-                description: "Building apps and websites that work seamlessly across all platforms",
+                description:
+                    "Building apps and websites that work seamlessly across all platforms",
               ),
-              _buildFeatureCard(
+
+              HoverFeatureCard(
                 width: width > 1200 ? 386 : 250,
                 icon: Icons.flash_on,
                 title: "Performance",
-                description: "Optimizing applications for speed and smooth user experience",
+                description:
+                    "Optimizing applications for speed and smooth user experience",
               ),
             ],
           ),
           SizedBox(height: 40),
           // My Journey Section
           Container(
-            width: width > 1200 ? 1200 : double.infinity, // increased horizontal size
+            width: width > 1200
+                ? 1200
+                : double.infinity, // increased horizontal size
             padding: EdgeInsets.all(25),
             decoration: BoxDecoration(
               color: Color(0xFF232742),
@@ -100,6 +124,7 @@ class AboutMeSection extends StatelessWidget {
     );
   }
 
+  // ignore: unused_element
   Widget _buildFeatureCard({
     required double width,
     required IconData icon,

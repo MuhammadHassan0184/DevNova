@@ -26,7 +26,7 @@ class ContactSection extends StatelessWidget {
       ),
       child: Center(
         child: Container(
-          width: contentWidth, // 🔥 SAME WIDTH LOGIC AS ABOUT ME
+          width: contentWidth, //  SAME WIDTH LOGIC AS ABOUT ME
           padding: EdgeInsets.symmetric(horizontal: 35),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -97,14 +97,14 @@ class ContactSection extends StatelessWidget {
         infoTile(
           icon: Icons.phone_outlined,
           title: "Phone",
-          value: "+1 (234) 567-890",
+          value: "(+92) 320-4660490",
         ),
         SizedBox(height: 20),
 
         infoTile(
           icon: Icons.location_on_outlined,
           title: "Location",
-          value: "Your City, Country",
+          value: " Faisalabad, Pakistan",
         ),
       ],
     );
